@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.komugi.textviewtypeface.CenturyGothicTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:paddingLeft="12dp"
+        android:paddingRight="12dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="7dp"
+        android:id="@+id/more_option_tv"
+        android:textColor="@color/text_colur"
+        android:textSize="14dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        />
+
+</LinearLayout>

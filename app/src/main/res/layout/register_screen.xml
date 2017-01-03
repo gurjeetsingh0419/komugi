@@ -1,0 +1,311 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/register_lay1"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="10dp"
+        >
+
+        <com.komugi.textviewtypeface.CenturyGothicTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/text_colur"
+            android:text="@string/register_heading"
+            android:textSize="15sp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:id="@+id/register_tv"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="1"
+            >
+            <com.komugi.edittexttypeface.CenturyGothicItalicEditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="12dp"
+                android:hint="@string/first_name"
+                android:background="@drawable/text_bg"
+                android:gravity="center"
+                android:inputType="text"
+                android:id="@+id/first_name_edt"
+                android:textColor="@color/text_colur"
+                android:textColorHint="@color/text_colur"
+                android:textSize="13dp"
+                />
+            <Space
+                android:layout_width="2dp"
+                android:layout_height="match_parent" />
+
+            <com.komugi.edittexttypeface.CenturyGothicItalicEditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.5"
+                android:padding="12dp"
+                android:hint="@string/last_name"
+                android:background="@drawable/text_bg"
+                android:gravity="center"
+                android:inputType="text"
+                android:id="@+id/last_name_edt"
+                android:textColor="@color/text_colur"
+                android:textColorHint="@color/text_colur"
+                android:textSize="13dp"
+                />
+
+        </LinearLayout>
+
+        <com.komugi.edittexttypeface.CenturyGothicItalicEditText
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="12dp"
+            android:hint="@string/contact_number"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:inputType="phone"
+            android:id="@+id/contact_no_edt"
+            android:textColor="@color/text_colur"
+            android:textColorHint="@color/text_colur"
+            android:textSize="13dp"
+            />
+        <com.komugi.edittexttypeface.CenturyGothicItalicEditText
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="12dp"
+            android:hint="@string/email_address"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:id="@+id/email_address_edt"
+            android:textColor="@color/text_colur"
+            android:textColorHint="@color/text_colur"
+            android:textSize="13dp"
+            />
+        <com.komugi.edittexttypeface.CenturyGothicItalicEditText
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="12dp"
+            android:hint="@string/password"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:id="@+id/password_edt"
+            android:textColor="@color/text_colur"
+            android:textColorHint="@color/text_colur"
+            android:textSize="13dp"
+            />
+        <com.komugi.edittexttypeface.CenturyGothicItalicEditText
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="12dp"
+            android:hint="@string/cnfrm_pass"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:inputType="textPassword"
+            android:id="@+id/cnfrm_password_edt"
+            android:textColor="@color/text_colur"
+            android:textColorHint="@color/text_colur"
+            android:textSize="13dp"
+            />
+        <com.komugi.edittexttypeface.CenturyGothicItalicEditText
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:padding="12dp"
+            android:hint="@string/invite_code"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:inputType="text"
+            android:id="@+id/invit_code_edt"
+            android:textColor="@color/text_colur"
+            android:textColorHint="@color/text_colur"
+            android:textSize="13dp"
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="5dp"
+            >
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/term_cond_check_box"
+                android:layout_gravity="center"
+                android:gravity="center"
+                />
+
+            <com.komugi.textviewtypeface.CenturyGothicItalicTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="12dp"
+                android:text="@string/term_cond_text"
+                android:gravity="center|left"
+                android:inputType="text"
+                android:id="@+id/term_cond_tv"
+                android:textColor="@color/text_colur"
+                android:layout_gravity="left"
+                android:textSize="13dp"
+
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="1"
+            android:layout_marginTop="5dp"
+            >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/already_a_user_button"
+                android:id="@+id/already_user_img"
+                />
+
+                />
+            <Space
+                android:layout_width="2dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/register_button"
+                android:id="@+id/register_img"
+
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/register_lay2"
+        android:visibility="gone"
+        >
+
+        <com.komugi.textviewtypeface.CentuaryGothicBoldTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/regitseration_success_heading"
+            android:gravity="center"
+            android:id="@+id/register_text_heading"
+            android:textColor="@color/text_colur"
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            />
+
+        <com.komugi.textviewtypeface.CenturyGothicTextView
+            android:layout_below="@+id/register_text_heading"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="@string/registeration_success"
+            android:gravity="center"
+            android:id="@+id/register_text_decription"
+            android:textColor="@color/text_colur"
+            android:layout_gravity="center"
+            android:textSize="14dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:lineSpacingExtra="5dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/register_text_decription"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ok_button"
+            android:layout_marginTop="10dp"
+            android:id="@+id/ok_reg_img"
+            />
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/webview_container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/privacy_bg"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+
+        <ImageView
+            android:id="@+id/cross_iv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:padding="6dp"
+            android:src="@drawable/white_cross" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/white_bg"
+            android:layout_margin="10dp"
+            >
+
+        <WebView
+            android:id="@+id/webView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="1dp"
+            android:layout_marginLeft="1dp"
+            android:layout_marginRight="1dp"
+            />
+
+        </RelativeLayout>
+    </LinearLayout>
+
+
+</RelativeLayout>

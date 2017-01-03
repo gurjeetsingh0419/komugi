@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/loged_in_layout"
+        >
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <LinearLayout
+                android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:paddingBottom="10dp"
+                >
+
+                <com.komugi.textviewtypeface.CenturyGothicTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/text_colur"
+                    android:text="LOGIN"
+                    android:textSize="15sp"
+                    android:gravity="center"
+                    android:padding="10dp"
+                    />
+
+                <com.komugi.edittexttypeface.CenturyGothicItalicEditText
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="12dp"
+                    android:hint="Username"
+                    android:background="@drawable/text_bg"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:id="@+id/email_address_login_edt"
+                    android:textColor="@color/text_colur"
+                    android:textColorHint="@color/text_colur"
+                    android:textSize="13dp"
+                    />
+                <com.komugi.edittexttypeface.CenturyGothicItalicEditText
+                    android:layout_marginTop="5dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="12dp"
+                    android:hint="@string/password"
+                    android:background="@drawable/text_bg"
+                    android:gravity="center"
+                    android:inputType="textPassword"
+                    android:id="@+id/password_login_edt"
+                    android:textColor="@color/text_colur"
+                    android:textColorHint="@color/text_colur"
+                    android:textSize="13dp"
+                    />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:weightSum="1"
+                    android:layout_marginTop="15dp"
+                    >
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/login_button"
+                        android:id="@+id/login_img"
+                        android:layout_gravity="left"
+                        />
+
+                    />
+                    <Space
+                        android:layout_width="2dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/register_button"
+                        android:id="@+id/register_login_img"
+                        android:layout_gravity="right"
+                        android:gravity="right"
+                        />
+
+                </LinearLayout>
+
+                <com.komugi.textviewtypeface.CenturyGothicItalicTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:padding="12dp"
+                    android:text="@string/forgot_password"
+                    android:gravity="center"
+                    android:inputType="text"
+                    android:id="@+id/forgot_pass__tv"
+                    android:textColor="@color/text_colur"
+                    android:layout_gravity="center"
+                    android:textSize="13dp"
+                    />
+
+            </LinearLayout>
+        </ScrollView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/forgot_password_layout"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:paddingBottom="10dp"
+        android:visibility="gone"
+
+        >
+        <com.komugi.textviewtypeface.CenturyGothicTextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="12dp"
+            android:text="@string/forgot_password2"
+            android:id="@+id/forgot_pass_heading"
+            android:textColor="@color/text_colur"
+            android:textSize="15dp"
+            android:gravity="center"
+            />
+
+        <com.komugi.edittexttypeface.CenturyGothicItalicEditText
+            android:layout_below="@+id/forgot_pass_heading"
+            android:layout_marginTop="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:hint="@string/forgot_email_address"
+            android:background="@drawable/text_bg"
+            android:gravity="center"
+            android:inputType="textEmailAddress"
+            android:id="@+id/forgot_email_address_edt"
+            android:textColor="@color/text_colur"
+            android:textColorHint="@color/text_colur"
+            android:textSize="13dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/reset_password"
+            android:id="@+id/reset_pass_img"
+            android:layout_below="@+id/forgot_email_address_edt"
+            android:layout_marginTop="15dp"
+            />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>

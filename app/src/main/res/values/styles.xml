@@ -1,0 +1,32 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/login_reg</item>
+        <item name="colorPrimaryDark">@color/login_reg</item>
+        <item name="colorAccent">@color/login_reg</item>
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="android:windowDisablePreview">true</item>
+    </style>
+
+    <style name="MyCustomBetterPickersDialogs">
+        <item name="bpPreHeaderBackgroundColor">@color/dark_color_orange_app</item>
+        <item name="bpHeaderBackgroundColor">@color/color_orange_app</item>
+        <item name="bpHeaderSelectedTextColor">@color/white</item>
+        <item name="bpHeaderUnselectedTextColor">@color/white</item>
+
+        <item name="bpBodyBackgroundColor">@color/white</item>
+        <item name="bpBodySelectedTextColor">@color/color_orange_app</item>
+        <item name="bpBodyUnselectedTextColor">@color/dark_text_color</item>
+
+        <item name="bpRadialBackgroundColor">@color/color_orange_app</item>
+        <item name="bpRadialTextColor">@color/color_orange_app</item>
+        <item name="bpRadialPointerColor">@color/color_orange_app</item>
+
+        <item name="bpButtonsBackgroundColor">@color/white</item>
+        <item name="bpButtonsTextColor">@color/dark_text_color</item>
+    </style>
+
+</resources>

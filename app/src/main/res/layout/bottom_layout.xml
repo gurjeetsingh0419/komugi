@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:weightSum="5"
+    android:background="@drawable/bottom_background"
+    >
+<ImageView
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    android:src="@drawable/bottomicon_news"
+    android:layout_gravity="bottom"
+    android:id="@+id/news_img"
+    />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/bottomicon_voucher"
+        android:layout_gravity="bottom"
+        android:id="@+id/voucher_img"
+        />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/bottomicon_wallet"
+        android:layout_gravity="bottom"
+        android:id="@+id/wallet_img"
+        />
+    <ImageView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:src="@drawable/bottomicon_stamp"
+        android:layout_gravity="bottom"
+        android:id="@+id/stamp_img"
+        />
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        >
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner_location"
+            android:background="@null"
+            android:visibility="visible"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="bottom"
+            android:popupBackground="@drawable/app_colur_round_bg"
+            ></Spinner>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/bottomicon_more"
+        android:id="@+id/more_img"
+        android:layout_weight="1"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="bottom"
+        />
+
+
+
+    </RelativeLayout>
+</LinearLayout>

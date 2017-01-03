@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/my_profile"
+        android:id="@+id/profile_header_img"
+        android:scaleType="fitXY"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/details_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/profile_header_img"
+        >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+
+        >
+
+        <com.komugi.textviewtypeface.CentuaryGothicBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/name"
+            android:textColor="@color/text_colur"
+            android:textSize="14dp"
+            android:id="@+id/user_name_head"
+            />
+
+        <com.komugi.textviewtypeface.CenturyGothicTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/user_name"
+            android:textColor="@color/text_colur"
+            android:textSize="14dp"
+            android:layout_toRightOf="@+id/user_name_head"
+            android:inputType="text"
+            />
+
+        <com.komugi.textviewtypeface.CentuaryGothicBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/contactno"
+            android:textColor="@color/text_colur"
+            android:textSize="14dp"
+            android:layout_below="@+id/user_name_head"
+            android:id="@+id/contact_head"
+            />
+
+        <com.komugi.textviewtypeface.CenturyGothicTextView
+            android:layout_below="@+id/user_name_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:id="@+id/contactno_tv"
+            android:textColor="@color/text_colur"
+            android:textSize="14dp"
+            android:layout_toRightOf="@+id/contact_head"
+            android:inputType="phone"
+            />
+        <com.komugi.textviewtypeface.CentuaryGothicBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:paddingBottom="5dp"
+            android:text="@string/email"
+            android:textColor="@color/text_colur"
+            android:textSize="14dp"
+            android:layout_below="@+id/contact_head"
+            android:id="@+id/email_head"
+            />
+
+        <com.komugi.textviewtypeface.CenturyGothicTextView
+            android:layout_below="@+id/contact_head"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5sp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:id="@+id/email_tv"
+            android:textColor="@color/text_colur"
+            android:textSize="14dp"
+            android:layout_toRightOf="@+id/email_head"
+            android:inputType="textEmailAddress"
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/email_head"
+            android:id="@+id/birthday_lay"
+            >
+
+            <com.komugi.textviewtypeface.CentuaryGothicBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:text="@string/birthday"
+                android:textColor="@color/text_colur"
+                android:textSize="14dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/birhday_head"
+                android:layout_centerVertical="true"
+                />
+
+            <com.komugi.textviewtypeface.CenturyGothicTextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:id="@+id/birhday_tv"
+                android:textColor="@color/text_colur"
+                android:textSize="14dp"
+                android:layout_toRightOf="@+id/birhday_head"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/add_button"
+                android:id="@+id/add_birthday_img"
+                />
+
+        </RelativeLayout>
+
+        <com.komugi.textviewtypeface.CentuaryGothicBoldTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="5dp"
+            android:text="@string/gender"
+            android:textColor="@color/text_colur"
+            android:textSize="14dp"
+            android:layout_below="@+id/birthday_lay"
+            android:id="@+id/gender_head"
+
+            />
+
+        <com.komugi.textviewtypeface.CenturyGothicTextView
+            android:layout_below="@+id/birthday_lay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:paddingRight="10dp"
+            android:id="@+id/gender_tv"
+            android:textColor="@color/text_colur"
+            android:textSize="14dp"
+            android:layout_toRightOf="@+id/gender_head"
+
+
+            />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/gender_head"
+            android:id="@+id/pass_lay"
+            >
+
+            <com.komugi.textviewtypeface.CentuaryGothicBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:text="@string/password"
+                android:textColor="@color/text_colur"
+                android:textSize="14dp"
+                android:id="@+id/pass_head"
+                android:layout_alignParentLeft="true"
+                android:layout_centerVertical="true"
+                />
+
+            <com.komugi.textviewtypeface.CenturyGothicTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:paddingRight="10dp"
+                android:id="@+id/pass_tv"
+                android:textColor="@color/text_colur"
+                android:textSize="14dp"
+                android:layout_toRightOf="@+id/pass_head"
+                android:inputType="textPassword"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/change_button"
+                android:id="@+id/change_pass_img"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pass_lay"
+            >
+
+            <com.komugi.textviewtypeface.CentuaryGothicBoldTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="5dp"
+                android:text="@string/status"
+                android:textColor="@color/text_colur"
+                android:textSize="14dp"
+                android:layout_alignParentLeft="true"
+                android:id="@+id/status_head"
+                android:layout_centerVertical="true"
+                />
+
+            <com.komugi.textviewtypeface.CenturyGothicItalicTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingTop="5dp"
+                android:paddingBottom="10dp"
+                android:paddingRight="10dp"
+                android:text="Pending"
+                android:id="@+id/status_tv"
+                android:textColor="@color/red"
+                android:textSize="14dp"
+                android:layout_toRightOf="@+id/status_head"
+                android:layout_centerVertical="true"
+                />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/activate"
+                android:id="@+id/activate_acct_img"
+                android:layout_alignRight="@+id/status_tv"
+                />
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        >
+        <ImageView
+            android:id="@+id/stamp_icon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:src="@drawable/stamps"
+            android:visibility="visible"
+            android:scaleType="fitXY"
+            />
+        <include  layout="@layout/header_layout"
+            android:id="@+id/header_lay"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            />
+    </RelativeLayout>
+    <include  layout="@layout/bottom_layout"
+        android:id="@+id/bottom_lay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header"
+        android:layout_above="@+id/bottom_lay"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:id="@+id/circle_bg"
+        android:layout_centerVertical="true"
+        />
+
+    <io.github.francoiscampbell.circlelayout.CircleLayout
+        xmlns:cl="http://schemas.android.com/apk/res-auto"
+        android:layout_width="wrap_content"
+        android:id="@+id/circular_lay"
+        android:layout_height="wrap_content"
+        cl:cl_angleOffset="80"
+        cl:cl_direction="clockwise"
+        cl:cl_centerView="@+id/centerView"
+        android:padding="10dp"
+
+        >
+
+        <ImageView
+            android:id="@+id/centerView"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/komugistamp_color"/>
+
+        <ImageView
+            android:id="@+id/stamp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/komugistamp_color"
+           />
+
+        <ImageView
+            android:id="@+id/stamp2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/komugistamp_color"/>
+
+        <ImageView
+            android:id="@+id/stamp3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/komugistamp_color"/>
+
+        <ImageView
+            android:id="@+id/stamp4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rm10color"/>
+
+        <ImageView
+            android:id="@+id/stamp5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/komugistamp_bw"/>
+
+        <ImageView
+            android:id="@+id/stamp6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/komugistamp_bw"/>
+
+        <ImageView
+            android:id="@+id/stamp7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/komugistamp_bw"/>
+        <ImageView
+            android:id="@+id/stamp8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rm20bnw"/>
+        <ImageView
+            android:id="@+id/stamp9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/komugistamp_bw"/>
+        <ImageView
+            android:id="@+id/stamp10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/rm30bnw"/>
+    </io.github.francoiscampbell.circlelayout.CircleLayout>
+    <ImageView
+        android:id="@+id/colllect_stamp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/circular_lay"
+        android:src="@drawable/collectstamp"
+        android:layout_centerHorizontal="true"/>
+    <com.komugi.textviewtypeface.CenturyGothicItalicTextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:text="@string/only_term_cond_text"
+        android:id="@+id/term_cond_tv"
+        android:textColor="@color/text_colur"
+        android:textSize="13dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/colllect_stamp"
+
+        />
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

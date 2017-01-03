@@ -1,0 +1,46 @@
+<resources>
+    <string name="app_name">Komugi</string>
+    <string name="login"><u>LOGIN</u></string>
+    <string name="current_balance">CURRENT BALANCE</string>
+    <string name="register_heading">REGISTER</string>
+    <string name="first_name">First Name</string>
+    <string name="last_name">Last Name</string>
+    <string name="contact_number">Contact Number</string>
+    <string name="email_address">Email Address</string>
+    <string name="forgot_email_address">enter your email address</string>
+    <string name="password">Password</string>
+    <string name="cnfrm_pass">Confirm Password</string>
+    <string name="invite_code">Invite Code (optional)</string>
+    <string name="term_cond_text">agree <u>terms &amp; conditions</u></string>
+    <string name="only_term_cond_text"><u>terms &amp; conditions</u></string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="forgot_password2">Forgot Password</string>
+    <string name="name">Name:</string>
+    <string name="contactno">Contact Number:</string>
+    <string name="email">Email:</string>
+    <string name="birthday">Birthday:</string>
+    <string name="gender">Gender:</string>
+    <string name="passwordd">Password:</string>
+    <string name="status">Status:</string>
+    <string name="oldpass">OLD PASSWORD</string>
+    <string name="newpass">NEW PASSWORD</string>
+    <string name="repass">RETYPE PASSWORD</string>
+    <string name="share_head">Share your invite code</string>
+    <string name="details"><u>Details</u></string>
+    <string name="details_rm">Share to 5 friends and get free RM10 wallet</string>
+    <string name="regitseration_success_heading">Registeration Successfull!</string>
+    <string name="registeration_success">Please proceed to nearby Komugi outlet to activate your account with RM10 registeration fee. the RM10 will be rewarded to your Wallet for your purchase in Komugi\'s outlet or via Komugi Mobile App!</string>
+    <string name="reload">RELOAD</string>
+    <string name="cash">CASH</string>
+    <string name="molpay">MOLPAY</string>
+    <string name="transaction">TRANSACTION HISTORY</string>
+    <string-array name="more_array">
+        <item>MY PROFILE</item>
+        <item>SHARE TO FRIEND</item>
+        <item>ABOUT</item>
+        <item>SOCIAL MEDIA</item>
+        <item>LOCATION</item>
+        <item>LOGOUT</item>
+    </string-array>
+
+</resources>

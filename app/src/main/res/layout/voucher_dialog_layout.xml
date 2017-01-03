@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/voucher_img"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        android:src="@drawable/voucher_1"
+        android:layout_margin="15dp"
+        />
+
+    <com.komugi.textviewtypeface.CenturyGothicTextView
+        android:id="@+id/voucher_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="1. This product consist of RM29 Komugi physical Voucher.\n2. Validity:31 dec 2016\n3. This product can only be purchase 1 quantitiy per ID at each time of purchase.\n4. This voucher is applicable only for app user only."
+        android:textSize="16sp"
+        android:padding="10dp"
+        android:layout_margin="10dp"
+        android:lineSpacingExtra="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:layout_margin="10dp"
+        >
+<LinearLayout
+    android:layout_width="0dp"
+    android:layout_height="wrap_content"
+    android:layout_weight="0.5"
+    android:gravity="right"
+    android:layout_gravity="right"
+    android:layout_marginRight="10dp">
+    <ImageView
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/cancel"
+        android:layout_gravity="right"
+        />
+</LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="left"
+            android:layout_gravity="left"
+            android:layout_marginLeft="10dp">
+        <ImageView
+            android:id="@+id/confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/confirm"
+            />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

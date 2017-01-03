@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="login_reg">#fce889</color>
+    <color name="term_con_popup_bg">#fef9e6</color>
+    <color name="white">#ffffff</color>
+    <color name="text_colur">#110000</color>
+    <color name="red">#ff0000</color>
+
+    <color name="dark_color_orange_app">#e99003</color>
+    <color name="color_orange_app">#FF9C00</color>
+    <color name="dark_text_color">#2e2e2e</color>
+    <color name="transaction_bg_color">#F6EAD2</color>
+
+</resources>
